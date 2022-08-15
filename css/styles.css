@@ -60,6 +60,9 @@
     .header-contacts .link:focus {  
         color: var(--primary-accent-color);
     }
+    .link.actual {
+        color: var(--primary-accent-color);
+    }
 
 /* link list styles */
     .list {
@@ -122,7 +125,8 @@
     line-height: 1.63;
     border: none;
 }
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
     background-color: var(--primary-accent-color);
     color: var(--secondary-accent-color);
     font-size: 16px;
@@ -143,20 +147,20 @@
 }
 
 /* footer styles */
-    footer {
+    .footer {
         background-color: var(--bg-color-dark);
     }
     .link.map {
         color: var(--secondary-accent-color);
     }
-    address {
+    .contact-info {
         font-style: normal;
     }
-    address .link {
+    .contact-info .link {
         text-decoration: none;
         color: var(--footer-text-color);
     }
-    address .link:hover,
-    address .link:focus {
+    .contact-info .link:hover,
+    .contact-info .link:focus {
         color: var(--primary-accent-color);
     }
